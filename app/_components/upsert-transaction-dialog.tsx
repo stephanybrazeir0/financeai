@@ -42,7 +42,7 @@ import {
   TRANSACTION_CATEGORY_OPTIONS,
 } from "../_constants/transactions";
 import { DatePicker } from "./ui/date-picker";
-import { UpsertTransaction } from "../_actions/add-transaction";
+import { UpsertTransaction } from "../_actions/upsert-transaction";
 
 interface UpsertTransactionDialogProps {
   isOpen: boolean;
@@ -131,9 +131,9 @@ const UpsertTransactionDialog = ({
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-4 xl:space-y-8"
+            className="space-y-4 2xl:space-y-8"
           >
-            <div className="md:flex md:justify-between xl:block">
+            <div className="xl:flex xl:justify-between 2xl:block">
               <FormField
                 control={form.control}
                 name="name"
